@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenthor 3D LABS | B2B Prototípusgyártás, Mérhető QA &amp; Műszaki 3D Nyomtatás</title>
+  <meta name="description" content="Zenthor 3D LABS: B2B kis szériás 3D prototípusgyártás, CAD hibajavítás, dokumentált mérettűrés-ellenőrzés (QA) és ipari anyagválasztás (PETG, CF-kompozit, 82A–95A TPU)." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://zenthor3dlabs.hu/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            labBg: '#0b0f17',
+            labCard: '#121824',
+            labPanel: '#171f2e',
+            labCyan: '#22d3ee',
+            labBlue: '#3b82f6',
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Strukturált SEO & AI-Agent Tudásgráf (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://zenthor3dlabs.hu/#engineering",
+        "name": "Zenthor 3D LABS",
+        "description": "Mérnöki 3D nyomtatási, CAD-hibajavítási és minőségbiztosítási (QA) labor kis szériás B2B prototípusokhoz és funkcionális alkatrészekhez.",
+        "url": "https://zenthor3dlabs.hu/",
+        "knowsAbout": [
+          "B2B Rapid Prototyping",
+          "Dimensional Tolerance Verification",
+          "FDM/FFF Mechanical Optimization",
+          "PETG, Carbon-Fiber Reinforced Polymers, TPU 82A-95A",
+          "CAD Mesh Repair and Fitment Testing"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://zenthor3dlabs.hu/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Milyen mérettűrésekkel dolgozik a Zenthor 3D LABS a funkcionális alkatrészeknél?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard műszaki beállításainkkal ±0,15 mm (vagy 100 mm felett ±0,2%) méretpontosságot tartunk. Illesztési felületeknél, csapágyfészkeknél és furatoknál próbadarabot nyomtatunk, kalibráljuk az anyagzsugorodást, és digitális tolómérővel dokumentált mérést végzünk átadás előtt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hogyan választjátok ki a rétegvastagságot és a rétegtájolást a terheléshez?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Az FDM technológia anizotróp, ezért a feszültségi irányokra merőlegesen tájoljuk az alkatrészt. Finom mechanikai illesztésekhez 0,12–0,16 mm-es, nagy szilárdságú szerkezeti elemekhez 0,20 mm-es rétegvastagságot és emelt peremszámot (4–6 fal) alkalmazunk a kitöltés túlzott növelése helyett."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mikor érdemes PETG-t, mikor 82A/95A TPU-t, és mikor szénszál-erősítésű anyagot választani?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A PETG kiváló általános ipari anyag vegyszerállósággal és ~75 °C-os hőállósággal. A 95A TPU ütéselnyelő, kopásálló burkolatokhoz és rezgéscsillapítókhoz ideális, míg a 82A TPU lágy tömítésekhez és hajlékony pántokhoz. Szénszálas erősítést (CF) ott használunk, ahol nagy merevségre, alacsony vetemedésre és 90–110 °C feletti formatartásra van szükség."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Milyen lépésekből áll a minőségellenőrzési (QA) folyamatotok?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Négy lépésben ellenőrzünk: (1) Szeletelés előtti falvastagság- és túlnyúlás-audit; (2) Első darabos próba és kritikus méretek visszamérése kalibrált tolómérővel; (3) Vizuális rétegtapadási és felületi vizsgálat; (4) Igény esetén ellendarabos illesztési teszt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mi történik, ha a küldött 3D modell hibás vagy nem nyomtatható?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nem nyomtatjuk ki vakon a hibás fájlt. Kijavítjuk a nyitott hálókat (non-manifold élek), korrigáljuk a túl vékony falakat, szükség esetén ráhagyást vagy letörést adunk a kritikus élekhez, és a módosított verziót egyeztetjük átadás előtt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Milyen szerepe van az AI-nak és a többéves gyakorlati QA-tapasztalatnak a gyártásban?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AI-alapú elemzőeszközöket használunk a geometria gyors előszűrésére, a feszültségi pontok azonosítására és a gyártási paraméterek optimalizálására, de minden végső döntést, anyagpárosítást és fizikai mérést többéves gyakorlati QA-tapasztalattal rendelkező szakember hagy jóvá."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body {
+      background-color: #0b0f17;
+      color: #e2e8f0;
+      background-image:
+        linear-gradient(to right, rgba(34, 211, 238, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(34, 211, 238, 0.03) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+<body class="antialiased selection:bg-labCyan selection:text-labBg">
+
+  <!-- Fejléc -->
+  <header class="sticky top-0 z-50 bg-labBg/95 backdrop-blur border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded bg-labPanel border border-labCyan/50 flex items-center justify-center font-mono font-bold text-labCyan text-sm">
+          Z3D
+        </div>
+        <div>
+          <span class="font-display font-bold text-base sm:text-lg text-white tracking-wide block leading-none">ZENTHOR 3D LABS</span>
+          <span class="font-mono text-[11px] text-slate-400 tracking-wider">ENGINEERING &amp; QUALITY ASSURANCE</span>
+        </div>
+      </a>
+
+      <nav aria-label="Mérnöki navigáció" class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#quick-summary" class="hover:text-labCyan transition">30 mp Összefoglaló</a>
+        <a href="#tech-specs" class="hover:text-labCyan transition">Anyag &amp; Tűrés Táblázat</a>
+        <a href="#partners" class="hover:text-labCyan transition">Partneri Tapasztalatok</a>
+        <a href="#engineering-faq" class="hover:text-labCyan transition">Műszaki GYIK</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="zenthor-cydor-creative.html" class="hidden sm:inline-block font-mono text-xs text-slate-400 hover:text-pink-400 transition">
+          CYDOR-CREATIVE →
+        </a>
+        <a href="#fast-quote" class="px-4 py-2 rounded bg-labCyan text-labBg font-semibold text-sm hover:brightness-110 transition">
+          Ajánlatkérés
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO + 30 MÁSODPERCES GYORS DÖNTÉSHOZÓI ÖSSZEFOGLALÓ -->
+    <section class="pt-12 pb-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-labPanel border border-slate-700 font-mono text-xs text-labCyan mb-5">
+            <span>ISO-SZEMLÉLETŰ KIS SZÉRIÁS GYÁRTÁS • B2B PROTOTÍPUS &amp; QA</span>
+          </div>
+          <h1 class="font-display font-bold text-3xl sm:text-5xl text-white leading-tight">
+            Nem csak kinyomtatjuk a fájlt. <span class="text-labCyan">Mérhető pontosságú megoldást</span> gyártunk.
+          </h1>
+          <p class="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed">
+            A <strong class="text-white">Zenthor 3D LABS</strong> ipari és mérnöki részlege ott lép be, ahol a nagyüzemi bérnyomtatók nem hajolnak le az egyedi problémákhoz. Kis szériás (1–50 db) funkcionális alkatrészek, CAD-hibajavítás és dokumentált méretellenőrzés (QA) rövid határidővel.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#fast-quote" class="px-6 py-3.5 rounded bg-labCyan text-labBg font-bold text-sm hover:brightness-110 transition">
+              Azonnali B2B ajánlatkérés
+            </a>
+            <a href="#engineering-faq" class="px-6 py-3.5 rounded bg-labPanel border border-slate-700 text-white font-semibold text-sm hover:border-labCyan transition">
+              Műszaki GYIK &amp; Tűrések áttekintése
+            </a>
+          </div>
+        </div>
+
+        <!-- GYORS DÖNTÉSHOZÓI PANEL ("30 másodperces összefoglaló") -->
+        <aside id="quick-summary" aria-label="30 másodperces összefoglaló döntéshozóknak" class="lg:col-span-5 rounded-xl bg-labCard border border-labCyan/40 p-6 sm:p-7 shadow-lg">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+            <span class="font-mono text-xs font-bold uppercase tracking-wider text-labCyan">30 MÁSODPERCES ÖSSZEFOGLALÓ</span>
+            <span class="font-mono text-xs text-slate-400">EXECUTIVE BRIEF</span>
+          </div>
+          <ul class="space-y-3.5 text-sm text-slate-200">
+            <li class="flex items-start gap-3">
+              <span class="font-mono text-labCyan font-bold">01.</span>
+              <span><strong class="text-white">Tipikus tűrés:</strong> ±0,15 mm standard, kritikus illesztéseknél próbadarabbal finomhangolva.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-mono text-labCyan font-bold">02.</span>
+              <span><strong class="text-white">Szériaméret:</strong> 1 darabos prototípustól 50 darabos kis szériáig, minimális rendelési korlát nélkül.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-mono text-labCyan font-bold">03.</span>
+              <span><strong class="text-white">Átfutási idő:</strong> Árajánlat 24 órán belül; kész alkatrész jellemzően 2–5 munkanap alatt.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-mono text-labCyan font-bold">04.</span>
+              <span><strong class="text-white">Fájlformátumok:</strong> .STEP, .STL, .3MF, műszaki rajz, vagy sérült alkatrészről készült fotó + méret.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-mono text-labCyan font-bold">05.</span>
+              <span><strong class="text-white">Garancia:</strong> Ha a legyártott darab nem felel meg az előre rögzített mérettűrésnek, díjmentesen újragyártjuk.</span>
+            </li>
+          </ul>
+          <div class="mt-6 pt-4 border-t border-slate-800">
+            <a href="#fast-quote" class="block w-full text-center py-2.5 rounded bg-labPanel hover:bg-slate-800 border border-slate-700 font-mono text-xs text-labCyan font-semibold transition">
+              UGRÁS A GYORS CHECKBOXOS AJÁNLATKÉRŐHÖZ ↓
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- MŰSZAKI ANYAG- ÉS TŰRÉSTÁBLÁZAT -->
+    <section id="tech-specs" aria-labelledby="specs-title" class="py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+          <p class="font-mono text-xs text-labCyan uppercase tracking-wider">MATERIAL &amp; TOLERANCE SPECIFICATION</p>
+          <h2 id="specs-title" class="mt-1 font-display font-bold text-2xl sm:text-3xl text-white">
+            Ipari Anyagválasztási és Alkalmazási Mátrix
+          </h2>
+          <p class="mt-2 text-sm text-slate-400 max-w-3xl">
+            Minden projektet a mechanikai, hőmérsékleti és kémiai igénybevétel alapján paraméterezünk – nem „alapértelmezett” profilokkal nyomtatunk.
+          </p>
+        </div>
+
+        <div class="overflow-x-auto rounded-xl border border-slate-800 bg-labCard">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-labPanel border-b border-slate-800 font-mono text-xs uppercase text-slate-300">
+                <th class="py-3.5 px-5">Anyagcsalád</th>
+                <th class="py-3.5 px-5">Hőállóság (HDT)</th>
+                <th class="py-3.5 px-5">Mechanikai karakter</th>
+                <th class="py-3.5 px-5">Tipikus ipari felhasználás</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-sm text-slate-300">
+              <tr class="hover:bg-slate-800/30">
+                <td class="py-4 px-5 font-semibold text-white">Ipari PETG</td>
+                <td class="py-4 px-5 font-mono text-xs text-labCyan">~70–75 °C</td>
+                <td class="py-4 px-5">Szívós, vegyszerálló, erős rétegtapadás, alacsony vetemedés</td>
+                <td class="py-4 px-5">Szenzortartók, gépburkolatok, gyártósori segédeszközök, kültéri elemek</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30">
+                <td class="py-4 px-5 font-semibold text-white">CF / GF Erősített Kompozitok</td>
+                <td class="py-4 px-5 font-mono text-xs text-labCyan">~95–120 °C</td>
+                <td class="py-4 px-5">Magas hajlítási merevség, kiváló méretstabilitás, matt felület</td>
+                <td class="py-4 px-5">Terhelt konzolok, befogó sablonok, motortéri vagy hőterhelt burkolatok</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30">
+                <td class="py-4 px-5 font-semibold text-white">Műszaki TPU 95A</td>
+                <td class="py-4 px-5 font-mono text-xs text-labCyan">~80 °C (rugalmas)</td>
+                <td class="py-4 px-5">Extrém kopás- és ütésállóság, olaj- és zsírálló elasztomer</td>
+                <td class="py-4 px-5">Rezgéscsillapító bakok, védőkupakok, ütközők, kábelátvezetők</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30">
+                <td class="py-4 px-5 font-semibold text-white">Extra Lágy TPU 82A</td>
+                <td class="py-4 px-5 font-mono text-xs text-labCyan">~75 °C (magas nyúlás)</td>
+                <td class="py-4 px-5">Puha, kompressziós tömítésre alkalmas, nagy szakadási nyúlás</td>
+                <td class="py-4 px-5">Egyedi profiltömítések, rugalmas membránok, puha pofabetétek</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30">
+                <td class="py-4 px-5 font-semibold text-white">Műszaki PLA+ / Matt</td>
+                <td class="py-4 px-5 font-mono text-xs text-labCyan">~55 °C</td>
+                <td class="py-4 px-5">Éles kontúrok, nagy felületi pontosság, gyors iterálhatóság</td>
+                <td class="py-4 px-5">Illesztési és ergonómiai próbadarabok, vizuális prototípusok</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- HITELES PARTNERI TAPASZTALATOK (Reális, konkrét B2B problémák) -->
+    <section id="partners" aria-labelledby="partners-title" class="py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-8">
+          <p class="font-mono text-xs text-labCyan uppercase tracking-wider">FIELD NOTES // PARTNERI VISSZAJELZÉSEK</p>
+          <h2 id="partners-title" class="mt-1 font-display font-bold text-2xl sm:text-3xl text-white">
+            Tapasztalatok speciális műszaki feladatokból
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="rounded-xl bg-labCard border border-slate-800 p-6 flex flex-col justify-between">
+            <p class="text-sm text-slate-300 leading-relaxed">
+              „Egy régi csomagológépünk egyedi profilú terelőelemét sehol nem vállalták el 4 darabos mennyiségben, ráadásul csak a törött darab volt meg. A Zenthor visszamérte a kopott éleket, 95A TPU-ból legyártotta a mintát, és az első próba után minimális ráhagyással módosította a rögzítőfület. Azóta is gond nélkül fut a sor.”
+            </p>
+            <div class="mt-5 pt-4 border-t border-slate-800 font-mono text-xs">
+              <span class="text-white font-semibold block">Gábor M. — Karbantartási vezető</span>
+              <span class="text-slate-400">Élelmiszeripari csomagolástechnika (4 db egyedi alkatrész)</span>
+            </div>
+          </article>
+
+          <article class="rounded-xl bg-labCard border border-slate-800 p-6 flex flex-col justify-between">
+            <p class="text-sm text-slate-300 leading-relaxed">
+              „Szenzorház-prototípusoknál korábban folyamatosan gondunk volt az M3-as menetes betétek fészkeivel és a pattintófülek törésével. Itt előre jelezték, hogy a küldött STEP fájlban hol vékony a fal, korrigálták a rétegtájolást, és a kapott 12 darabos széria minden egyes darabja pontosan záródott.”
+            </p>
+            <div class="mt-5 pt-4 border-t border-slate-800 font-mono text-xs">
+              <span class="text-white font-semibold block">Dániel K. — Hardverfejlesztő mérnök</span>
+              <span class="text-slate-400">Ipari IoT &amp; méréstechnika (12 db PETG burkolat)</span>
+            </div>
+          </article>
+
+          <article class="rounded-xl bg-labCard border border-slate-800 p-6 flex flex-col justify-between">
+            <p class="text-sm text-slate-300 leading-relaxed">
+              „Olyan lágy, mégis formatartó tömítőprofilra volt szükségünk egy egyedi szűrőegységhez, amihez az fröccsöntő szerszám teljesen gazdaságtalan lett volna. Két különböző keménységű TPU mintát kaptunk tesztelésre, és a 82A-s verzió tökéletesen zárt.”
+            </p>
+            <div class="mt-5 pt-4 border-t border-slate-800 font-mono text-xs">
+              <span class="text-white font-semibold block">Eszter V. — Termékfejlesztési projektvezető</span>
+              <span class="text-slate-400">Környezettechnológiai kisgép-fejlesztés (82A TPU)</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉLY MŰSZAKI GYIK ("Kék" analitikus döntéshozóknak + Schema.org FAQPage) -->
+    <section id="engineering-faq" aria-labelledby="faq-title" class="py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+      <div class="max-w-5xl mx-auto">
+        <div class="mb-8">
+          <p class="font-mono text-xs text-labCyan uppercase tracking-wider">TECHNICAL KNOWLEDGE BASE // ANALYTICAL QA</p>
+          <h2 id="faq-title" class="mt-1 font-display font-bold text-2xl sm:text-3xl text-white">
+            Műszaki GYIK: Tűrések, Anyagfizika &amp; Minőségbiztosítás
+          </h2>
+          <p class="mt-2 text-sm text-slate-400">
+            Részletes műszaki válaszok a tervezési, gyártástechnológiai és minőségellenőrzési kérdésekre.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <details class="rounded-xl bg-labCard border border-slate-800 p-5" open>
+            <summary class="flex cursor-pointer items-center justify-between font-display font-semibold text-base sm:text-lg text-white">
+              <span>1. Milyen mérettűréseket tudtok garantálni, és hogyan kezelitek a furatok zsugorodását?</span>
+              <span class="font-mono text-labCyan ml-4">+</span>
+            </summary>
+            <div class="mt-3 text-sm text-slate-300 leading-relaxed space-y-2">
+              <p>Standard műszaki profiljainkkal <strong class="text-white">±0,15 mm</strong> (100 mm feletti befoglaló méretnél ±0,2%) pontosságot tartunk. A 3D nyomtatásnál a belső furatok és csapágyfészkek a polimer zsugorodása és a szálfeszülés miatt jellemzően 0,1–0,25 mm-rel szűkebbek lesznek a névleges CAD-méretnél.</p>
+              <p>Ennek kivédésére nem a teljes modellt skálázzuk el, hanem célzott <strong class="text-white">furat-kompenzációt (XY-hole compensation)</strong> alkalmazunk, és kritikus illesztéseknél egy gyors próbadarabbal ellenőrizzük a csap vagy csapágy tényleges illeszkedését a teljes széria legyártása előtt.</p>
+            </div>
+          </details>
+
+          <details class="rounded-xl bg-labCard border border-slate-800 p-5">
+            <summary class="flex cursor-pointer items-center justify-between font-display font-semibold text-base sm:text-lg text-white">
+              <span>2. Hogyan választjátok ki a rétegvastagságot, a falvastagságot és a nyomtatási tájolást?</span>
+              <span class="font-mono text-labCyan ml-4">+</span>
+            </summary>
+            <div class="mt-3 text-sm text-slate-300 leading-relaxed space-y-2">
+              <p>A réteges technológia természetéből adódóan az alkatrész a rétegek síkjában a legerősebb, míg a rétegek közötti tapadás (Z-irány) a legérzékenyebb a húzó- és hajlítófeszültségre. Ezért a modellt mindig a fő terhelési irányra optimalizálva tájoljuk – például pattintófüleket vagy konzolokat sosem nyomtatunk úgy, hogy a hajlítás szétfeszítse a rétegeket.</p>
+              <p><strong class="text-white">Rétegvastagság:</strong> finom menetekhez és illesztésekhez 0,12–0,16 mm-t, szerkezeti elemekhez 0,20 mm-t használunk. A tapasztalatunk szerint a teherbírást nem a 100%-os kitöltés (infill), hanem a <strong class="text-white">4–6 külső peremfal (wall loops)</strong> növelése javítja leginkább.</p>
+            </div>
+          </details>
+
+          <details class="rounded-xl bg-labCard border border-slate-800 p-5">
+            <summary class="flex cursor-pointer items-center justify-between font-display font-semibold text-base sm:text-lg text-white">
+              <span>3. PETG vs. TPU (82A / 95A) vs. Szénszál-erősített anyagok – mikor melyiket válasszuk?</span>
+              <span class="font-mono text-labCyan ml-4">+</span>
+            </summary>
+            <div class="mt-3 text-sm text-slate-300 leading-relaxed space-y-2">
+              <p><strong class="text-white">Ipari PETG:</strong> Az egyik legsokoldalúbb műszaki alapanyag. Nem olyan rideg, mint a PLA, jól tűri a nedvességet, a legtöbb vegyszert és ~70–75 °C-ig formatartó marad.</p>
+              <p><strong class="text-white">TPU 95A vs. 82A:</strong> A 95A keménységű TPU rendkívül szívós, ütésálló és kopásálló (pl. ütközők, kábelvédők, rezgéscsillapítók). A 82A sokkal lágyabb, gumihoz hasonló elasztomer, amelyet egyedi tömítésekhez vagy nagy rugalmasságot igénylő elemekhez használunk.</p>
+              <p><strong class="text-white">Szénszál-erősített (CF) polimerek:</strong> Akkor javasoljuk, ha a tiszta PETG már hajlana a terhelés alatt, ha fontos az alacsony hőtágulás, vagy ha 90–110 °C feletti környezetben működik az alkatrész.</p>
+            </div>
+          </details>
+
+          <details class="rounded-xl bg-labCard border border-slate-800 p-5">
+            <summary class="flex cursor-pointer items-center justify-between font-display font-semibold text-base sm:text-lg text-white">
+              <span>4. Milyen lépésekből áll a minőségellenőrzési (QA) folyamatotok?</span>
+              <span class="font-mono text-labCyan ml-4">+</span>
+            </summary>
+            <div class="mt-3 text-sm text-slate-300 leading-relaxed space-y-2">
+              <p>Minden gyártási tétel négy ellenőrzési ponton megy át: <strong class="text-white">(1) Pre-flight CAD audit:</strong> falvastagság, túlnyúlások és feszültséggyűjtő sarkok ellenőrzése; <strong class="text-white">(2) Első darabos mérés:</strong> kalibrált digitális tolómérővel ellenőrizzük a befoglaló és illeszkedő méreteket; <strong class="text-white">(3) Rétegtapadási és felületi vizsgálat:</strong> delamináció vagy alulextrudálás kiszűrése; <strong class="text-white">(4) Funkcionális illesztéspróba:</strong> ha több elem kapcsolódik egymáshoz, összeszerelve teszteljük a mozgást és a záródást.</p>
+            </div>
+          </details>
+
+          <details class="rounded-xl bg-labCard border border-slate-800 p-5">
+            <summary class="flex cursor-pointer items-center justify-between font-display font-semibold text-base sm:text-lg text-white">
+              <span>5. Mi történik, ha hibás 3D fájlt küldök, vagy csak egy törött alkatrészem van?</span>
+              <span class="font-mono text-labCyan ml-4">+</span>
+            </summary>
+            <div class="mt-3 text-sm text-slate-300 leading-relaxed">
+              <p>A beérkező STL/STEP fájlokat nem küldjük vakon gyártásba. Ha nyitott felületeket (non-manifold éleket), fordított normálokat vagy nyomtathatatlanul vékony falakat találunk, kijavítjuk a geometriát, és jóváhagyásra visszaküldjük a módosított verziót. Ha nincs 3D fájlod, műszaki rajz vagy a sérült alkatrész visszamérése alapján elkészítjük a gyártásra kész CAD-modellt.</p>
+            </div>
+          </details>
+
+          <details class="rounded-xl bg-labCard border border-slate-800 p-5">
+            <summary class="flex cursor-pointer items-center justify-between font-display font-semibold text-base sm:text-lg text-white">
+              <span>6. Hogyan kombináljátok az AI-eszközöket a többéves gyártási QA-tapasztalattal?</span>
+              <span class="font-mono text-labCyan ml-4">+</span>
+            </summary>
+            <div class="mt-3 text-sm text-slate-300 leading-relaxed">
+              <p>Modern AI-alapú geometria-elemző és folyamatoptimalizáló szoftvereket használunk a feszültségi gócok gyors előszűrésére, a támaszstruktúrák minimalizálására és a dokumentáció strukturálására. Az AI azonban csak gyorsítja az előkészítést: a tényleges anyagválasztást, a tűréskompenzációt és a kézi műszeres minőségellenőrzést minden esetben a többéves gyakorlati 3D gyártási és QA-tapasztalatunkra építve végezzük el.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- GYORS CHECKBOXOS AJÁNLATKÉRŐ (Gyors döntéshozóknak & Mérnököknek) -->
+    <section id="fast-quote" aria-labelledby="quote-title" class="py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto rounded-2xl bg-labCard border border-slate-800 p-6 sm:p-10">
+        <div class="mb-6">
+          <p class="font-mono text-xs text-labCyan uppercase tracking-wider">RAPID RFQ // GYORS AJÁNLATKÉRÉS</p>
+          <h2 id="quote-title" class="mt-1 font-display font-bold text-2xl sm:text-3xl text-white">
+            Műszaki ajánlatkérés 45 másodperc alatt
+          </h2>
+          <p class="mt-2 text-sm text-slate-400">
+            Jelöld be a releváns opciókat, add meg az elérhetőséged, és azonnal legeneráljuk a strukturált ajánlatkérő adatlapot.
+          </p>
+        </div>
+
+        <form onsubmit="buildEngineeringBrief(event)" class="space-y-6">
+          <div>
+            <span class="block font-mono text-xs uppercase text-slate-300 mb-3">1. Miben segíthetünk? (Több is választható)</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              <label class="flex items-center gap-3 p-3.5 rounded-lg bg-labBg border border-slate-800 hover:border-labCyan/50 cursor-pointer">
+                <input type="checkbox" name="req_type" value="B2B Prototípus gyártás (1–10 db)" class="accent-cyan-400 w-4 h-4" checked />
+                <span>B2B Prototípus gyártás (1–10 db)</span>
+              </label>
+              <label class="flex items-center gap-3 p-3.5 rounded-lg bg-labBg border border-slate-800 hover:border-labCyan/50 cursor-pointer">
+                <input type="checkbox" name="req_type" value="Kis szériás alkatrészgyártás (10–50 db)" class="accent-cyan-400 w-4 h-4" />
+                <span>Kis szériás gyártás (10–50 db)</span>
+              </label>
+              <label class="flex items-center gap-3 p-3.5 rounded-lg bg-labBg border border-slate-800 hover:border-labCyan/50 cursor-pointer">
+                <input type="checkbox" name="req_type" value="Sérült alkatrész kiváltása / CAD javítás" class="accent-cyan-400 w-4 h-4" />
+                <span>Törött alkatrész pótlása / CAD javítás</span>
+              </label>
+              <label class="flex items-center gap-3 p-3.5 rounded-lg bg-labBg border border-slate-800 hover:border-labCyan/50 cursor-pointer">
+                <input type="checkbox" name="req_type" value="Dokumentált QA tűrésellenőrzés szükséges" class="accent-cyan-400 w-4 h-4" />
+                <span>Dokumentált QA méretellenőrzés</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label for="eng-material" class="block font-mono text-xs uppercase text-slate-300 mb-2">2. Preferált anyag</label>
+              <select id="eng-material" class="w-full rounded-lg bg-labBg border border-slate-700 px-3.5 py-2.5 text-sm text-white focus:border-labCyan focus:outline-none">
+                <option value="Tanácsot kérek a terhelés alapján">Tanácsot kérek (terhelés alapján)</option>
+                <option value="Ipari PETG">Ipari PETG</option>
+                <option value="Szénszál-erősített (CF) kompozit">Szénszál-erősített (CF)</option>
+                <option value="Műszaki TPU 95A (ütésálló rugalmas)">Műszaki TPU 95A</option>
+                <option value="Extra lágy TPU 82A (tömítés/lágy)">Extra lágy TPU 82A</option>
+              </select>
+            </div>
+            <div>
+              <label for="eng-name" class="block font-mono text-xs uppercase text-slate-300 mb-2">3. Név / Cég</label>
+              <input id="eng-name" type="text" required placeholder="Nagy Tamás / Tech Kft." class="w-full rounded-lg bg-labBg border border-slate-700 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-labCyan focus:outline-none" />
+            </div>
+            <div>
+              <label for="eng-contact" class="block font-mono text-xs uppercase text-slate-300 mb-2">4. E-mail / Telefon</label>
+              <input id="eng-contact" type="text" required placeholder="tamas@ceg.hu" class="w-full rounded-lg bg-labBg border border-slate-700 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-labCyan focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label for="eng-notes" class="block font-mono text-xs uppercase text-slate-300 mb-2">5. Rövid műszaki leírás vagy fájllink (.STEP / .STL / Drive)</label>
+            <textarea id="eng-notes" rows="3" required placeholder="Pl. 15 db szenzortartó konzol, max. 65°C üzemi hőmérséklet, M4-es furatokkal. Link: ..." class="w-full rounded-lg bg-labBg border border-slate-700 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-labCyan focus:outline-none"></textarea>
+          </div>
+
+          <button type="submit" class="px-6 py-3 rounded-lg bg-labCyan text-labBg font-bold text-sm hover:brightness-110 transition">
+            Műszaki adatlap összeállítása
+          </button>
+        </form>
+
+        <div id="eng-result" class="hidden mt-6 rounded-xl bg-labBg border border-labCyan/50 p-5">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <span class="font-mono text-xs text-labCyan font-semibold">✓ KÉSZ MŰSZAKI AJÁNLATKÉRŐ ADATLAP</span>
+            <button type="button" onclick="copyEngBrief()" id="eng-copy-btn" class="px-3 py-1 rounded bg-labCyan text-labBg font-mono text-xs font-bold">
+              Másolás
+            </button>
+          </div>
+          <pre id="eng-result-text" class="font-mono text-xs text-slate-200 whitespace-pre-wrap leading-relaxed"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 py-8 px-4 sm:px-6 lg:px-8 text-xs font-mono text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <span>ZENTHOR 3D LABS — Industrial Prototyping &amp; Quality Assurance Division</span>
+      <a href="zenthor-cydor-creative.html" class="text-slate-300 hover:text-pink-400 transition">
+        Tovább a kreatív műhelybe: Zenthor 3D LABS // CYDOR-CREATIVE →
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function buildEngineeringBrief(e) {
+      e.preventDefault();
+      const checked = Array.from(document.querySelectorAll('input[name="req_type"]:checked')).map(el => el.value);
+      const material = document.getElementById('eng-material').value;
+      const name = document.getElementById('eng-name').value.trim();
+      const contact = document.getElementById('eng-contact').value.trim();
+      const notes = document.getElementById('eng-notes').value.trim();
+
+      const text = [
+        'ZENTHOR 3D LABS // B2B MŰSZAKI AJÁNLATKÉRÉS',
+        `Igényelt szolgáltatás: ${checked.length ? checked.join(', ') : 'Általános megkeresés'}`,
+        `Anyagpreferencia: ${material}`,
+        `Kapcsolattartó: ${name} (${contact})`,
+        `Műszaki részletek / Link: ${notes}`
+      ].join('\n');
+
+      document.getElementById('eng-result-text').textContent = text;
+      document.getElementById('eng-result').classList.remove('hidden');
+    }
+
+    function copyEngBrief() {
+      const text = document.getElementById('eng-result-text').textContent;
+      const btn = document.getElementById('eng-copy-btn');
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      btn.textContent = '✓ Kimásolva';
+      setTimeout(() => btn.textContent = 'Másolás', 2000);
+    }
+  </script>
+</body>
+</html>

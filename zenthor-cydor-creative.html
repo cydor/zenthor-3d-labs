@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenthor 3D LABS // CYDOR-CREATIVE — Cybergoth Streetwear, Cosplay &amp; Vasalható TPU Drop</title>
+  <meta name="description" content="Zenthor 3D LABS // CYDOR-CREATIVE: Limitált cybergoth 3D kiegészítők, textilre vasalható 82A TPU grafikák, UV/Glow cosplay páncélelemek mérnöki háttérrel." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            cyber: ['Syne', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            voidBg: '#06050b',
+            cardDark: '#100e1c',
+            neonPink: '#ff1e8a',
+            neonCyan: '#00f5d4',
+            acidGreen: '#ccff00',
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- SEO & AI-Agent Strukturált Adatok (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Brand",
+        "name": "Zenthor 3D LABS // CYDOR-CREATIVE",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Zenthor 3D LABS"
+        },
+        "description": "A Zenthor 3D LABS mérnöki hátterével működő kreatív streetwear, cosplay és kísérleti 3D design divízió. Textilre vasalható rugalmas 82A TPU grafikák, UV/Glow kiegészítők és egyedi limitált darabok."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Tényleg rá lehet vasalni a 3D nyomtatott TPU grafikát pólóra vagy hoodie-ra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Igen! A CYDOR-CREATIVE extra lágy, Shore 82A keménységű elasztomerből nyomtatott 3D grafikái hőpréseléssel vagy vasalással rögzülnek a textilre, együtt mozognak és gyűrődnek az anyaggal, és bírják a kímélő mosást."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Készítetek teljesen egyedi cosplay páncélt vagy fesztivál kiegészítőt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Igen, a Zenthor 3D LABS mérnöki csapatának támogatásával méretre szabott, rugalmas 95A TPU vagy sötétben világító Glow-in-the-Dark darabokat gyártunk akár 1 példányban is."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Animált cyberpunk háttérrács és finom mozgó fénycsíkok (magas kontraszt megőrzésével) */
+    body {
+      background-color: #06050b;
+      color: #f3f4f6;
+      background-image:
+        radial-gradient(circle at 15% 20%, rgba(255, 30, 138, 0.14), transparent 35%),
+        radial-gradient(circle at 85% 75%, rgba(0, 245, 212, 0.11), transparent 38%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+      animation: bgPulse 14s ease-in-out infinite alternate;
+    }
+
+    @keyframes bgPulse {
+      0% { background-position: 0% 0%, 100% 100%, 0 0, 0 0; }
+      100% { background-position: 10% 15%, 90% 85%, 36px 36px, 36px 36px; }
+    }
+
+    /* Valódi RGB Glitch szöveg-effekt */
+    .glitch {
+      position: relative;
+      display: inline-block;
+      text-shadow: 2px 0 #ff1e8a, -2px 0 #00f5d4;
+    }
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+    }
+    .glitch::before {
+      color: #ff1e8a;
+      z-index: -1;
+      animation: glitchAnim1 2.8s infinite linear alternate-reverse;
+    }
+    .glitch::after {
+      color: #00f5d4;
+      z-index: -2;
+      animation: glitchAnim2 2.2s infinite linear alternate-reverse;
+    }
+
+    @keyframes glitchAnim1 {
+      0%, 90% { transform: translate(0); }
+      92% { transform: translate(-3px, 1px); }
+      95% { transform: translate(3px, -1px); }
+      100% { transform: translate(0); }
+    }
+    @keyframes glitchAnim2 {
+      0%, 88% { transform: translate(0); }
+      91% { transform: translate(3px, 2px); }
+      96% { transform: translate(-2px, -2px); }
+      100% { transform: translate(0); }
+    }
+
+    /* Animált "GIF-szerű" scanline & cyber-hullám a vizuális placeholder kártyákban */
+    .cyber-gif-stage {
+      background: linear-gradient(135deg, #161129 0%, #26102c 50%, #0d262b 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .cyber-gif-stage::after {
+      content: "";
+      position: absolute;
+      inset: -100% 0;
+      background: linear-gradient(to bottom, transparent 45%, rgba(0, 245, 212, 0.22) 50%, transparent 55%);
+      animation: scanSweep 3.2s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes scanSweep {
+      0% { transform: translateY(-30%); }
+      100% { transform: translateY(30%); }
+    }
+
+    /* Ticker szalag animáció */
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 24s linear infinite;
+    }
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-neonPink selection:text-white">
+
+  <!-- Glitch Top Bar -->
+  <header class="sticky top-0 z-50 bg-voidBg/90 backdrop-blur-md border-b border-pink-500/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3">
+        <span class="px-2.5 py-1 rounded bg-neonPink text-voidBg font-mono font-bold text-xs tracking-tighter">
+          CYDOR//02
+        </span>
+        <div>
+          <span class="font-cyber font-extrabold text-sm sm:text-base text-white tracking-wider block leading-none">
+            ZENTHOR 3D LABS // <span class="text-neonCyan">CYDOR-CREATIVE</span>
+          </span>
+          <span class="font-mono text-[10px] text-slate-400 tracking-widest">NEO-TOKYO × BUDAPEST // WEARABLE &amp; COSPLAY LAB</span>
+        </div>
+      </a>
+
+      <nav aria-label="Kreatív navigáció" class="hidden md:flex items-center gap-6 font-mono text-xs uppercase text-slate-300">
+        <a href="#drop-feed" class="hover:text-neonPink transition">TikTok Drop Feed</a>
+        <a href="#tech-flex" class="hover:text-neonCyan transition">Iron-On TPU Tech</a>
+        <a href="#custom-collab" class="hover:text-acidGreen transition">Custom Drop / Collab</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="zenthor-engineering.html" class="hidden sm:inline-block font-mono text-xs text-slate-400 hover:text-neonCyan transition">
+          ← Mérnöki B2B oldal
+        </a>
+        <a href="#custom-collab" class="px-4 py-2 rounded-full bg-acidGreen text-voidBg font-mono font-bold text-xs uppercase hover:brightness-110 transition">
+          Drop igénylés
+        </a>
+      </div>
+    </div>
+
+    <!-- Futó cyberpunk ticker -->
+    <div class="bg-neonPink/15 border-t border-pink-500/20 py-1.5 overflow-hidden font-mono text-[11px] text-neonCyan">
+      <div class="marquee-track gap-8">
+        <span>⚡ ZENTHOR 3D LABS ENGINEERING BACKED //</span>
+        <span class="text-white">NO BASIC PRINTS — ONLY 1-OF-1 CYBERGOTH &amp; STREETWEAR DROPS //</span>
+        <span class="text-acidGreen">82A IRON-ON FLEX TPU • GLOW-IN-THE-DARK ARMOR • COSPLAY LAB //</span>
+        <span>TOKYO SHIBUYA × LA UNDERGROUND VIBE //</span>
+        <span>⚡ ZENTHOR 3D LABS ENGINEERING BACKED //</span>
+        <span class="text-white">NO BASIC PRINTS — ONLY 1-OF-1 CYBERGOTH &amp; STREETWEAR DROPS //</span>
+        <span class="text-acidGreen">82A IRON-ON FLEX TPU • GLOW-IN-THE-DARK ARMOR • COSPLAY LAB //</span>
+        <span>TOKYO SHIBUYA × LA UNDERGROUND VIBE //</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO: Gen-Z + Cybergoth + Mérnöki háttér -->
+    <section class="pt-12 pb-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800/80">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cardDark border border-neonPink/50 font-mono text-xs text-neonPink mb-5">
+            <span class="w-2 h-2 rounded-full bg-acidGreen animate-ping"></span>
+            <span>POWERED BY ZENTHOR 3D LABS INTERNATIONAL R&amp;D</span>
+          </div>
+
+          <h1 class="font-cyber font-extrabold text-4xl sm:text-6xl text-white leading-[1.08] tracking-tight">
+            <span class="glitch" data-text="CYDOR-CREATIVE">CYDOR-CREATIVE</span><br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonPink via-purple-400 to-neonCyan">
+              Next-Gen Cybergoth &amp; Wearable 3D Drip.
+            </span>
+          </h1>
+
+          <p class="mt-6 text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl">
+            Felejtsd el a sablonos bolti cuccokat. A <strong class="text-white">Zenthor 3D LABS</strong> mérnöki precizitásával építjük a jövő streetwear és cosplay darabjait: <strong class="text-neonCyan">pólóra vasalható, gyűrhető 82A TPU grafikák</strong>, sötétben izzó exoskeleton kiegészítők és 1-of-1 design dropok, amik garantáltan megállítják a feedet.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#drop-feed" class="px-6 py-3.5 rounded-full bg-neonPink text-white font-mono font-bold text-xs sm:text-sm uppercase tracking-wider hover:brightness-110 transition shadow-lg shadow-pink-600/30">
+              Vibe &amp; Drop Feed pörgetése ↓
+            </a>
+            <a href="#custom-collab" class="px-6 py-3.5 rounded-full bg-cardDark border border-neonCyan/60 text-neonCyan font-mono font-bold text-xs sm:text-sm uppercase tracking-wider hover:bg-neonCyan hover:text-voidBg transition">
+              Saját Custom Cucc Tervezése
+            </a>
+          </div>
+        </div>
+
+        <!-- Jobb oldali vizuális placeholder kártya (egyértelműen jelezve a későbbi cserét) -->
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl bg-cardDark border-2 border-neonCyan/50 p-4 shadow-2xl">
+            <div class="cyber-gif-stage rounded-2xl aspect-[4/5] flex flex-col justify-between p-6 border border-white/10">
+              <div class="flex items-center justify-between gap-2 z-10">
+                <span class="px-2.5 py-1 rounded bg-voidBg/85 border border-acidGreen text-acidGreen font-mono text-[11px] font-bold">
+                  ● LIVE GLITCH LOOP
+                </span>
+                <span class="px-2.5 py-1 rounded bg-voidBg/85 text-slate-300 font-mono text-[11px]">
+                  00:15 // 60FPS
+                </span>
+              </div>
+
+              <!-- KÖZÉPSŐ ANIMÁLT SVG CYBER-MASZK / WIREFRAME ILLUSZTRÁCIÓ (PLACEHOLDER) -->
+              <div class="my-auto text-center z-10 py-6">
+                <svg class="w-36 h-36 mx-auto text-neonCyan animate-pulse" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="60,8 108,35 108,85 60,112 12,85 12,35" stroke="#ff1e8a" stroke-width="2" />
+                  <polygon points="60,22 94,42 94,78 60,98 26,78 26,42" stroke="#00f5d4" />
+                  <line x1="12" y1="35" x2="108" y2="85" stroke="#ccff00" stroke-dasharray="4 4" />
+                  <line x1="108" y1="35" x2="12" y2="85" stroke="#ccff00" stroke-dasharray="4 4" />
+                  <circle cx="60" cy="60" r="14" stroke="#ffffff" stroke-width="2" />
+                </svg>
+                <p class="mt-4 font-mono text-xs uppercase tracking-widest text-acidGreen font-bold">
+                  [VISUAL PLACEHOLDER // ANIMÁLT CYBERPUNK GIF / VIDEÓ HELYE]
+                </p>
+                <p class="mt-1.5 text-xs text-slate-300 max-w-xs mx-auto">
+                  Ide kerül később a saját forgatott TikTok/Reels videód vagy fotód a világító maszkról / vasalható TPU hoodie-ról.
+                </p>
+              </div>
+
+              <div class="z-10 rounded-xl bg-voidBg/90 border border-slate-700 p-3.5 font-mono text-xs">
+                <div class="flex justify-between text-neonPink font-bold">
+                  <span>DROP #01: KITSUNE-X VISOR</span>
+                  <span>LIMITED 1/1</span>
+                </div>
+                <p class="text-slate-300 text-[11px] mt-1">
+                  95A Flex Armor + UV-reaktív neon betétek // Zenthor QA kalibrált illesztés
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIKTOK-STÍLUSÚ GÖRGETHETŐ DROP FEED (Magas kontrasztú sötét kártyák) -->
+    <section id="drop-feed" aria-labelledby="feed-title" class="py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800/80">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-wrap items-end justify-between gap-4 mb-10">
+          <div>
+            <p class="font-mono text-xs text-neonPink uppercase tracking-widest">CYDOR FEED // TRENDING DROPS</p>
+            <h2 id="feed-title" class="mt-1 font-cyber font-extrabold text-3xl sm:text-4xl text-white">
+              Válogass a műhely darabjaiból
+            </h2>
+          </div>
+          <span class="font-mono text-xs px-3 py-1.5 rounded-lg bg-cardDark border border-slate-700 text-slate-300">
+            Megjegyzés: A kártyák jelenleg animált stock/placeholder látványelemeket tartalmaznak.
+          </span>
+        </div>
+
+        <!-- 4 oszlopos TikTok-szerű vertikális feed rács -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Kártya 1 -->
+          <article class="rounded-2xl bg-cardDark border border-slate-800 hover:border-neonPink transition overflow-hidden flex flex-col justify-between">
+            <div class="cyber-gif-stage aspect-[9/12] p-4 flex flex-col justify-between border-b border-slate-800">
+              <div class="flex justify-between items-center z-10 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-neonPink text-white font-bold">HOT DROP</span>
+                <span class="px-2 py-0.5 rounded bg-voidBg/80 text-neonCyan">GIF PLACEHOLDER</span>
+              </div>
+              <div class="my-auto text-center z-10 px-2">
+                <div class="w-16 h-16 mx-auto rounded-full border-2 border-dashed border-neonCyan flex items-center justify-center font-mono text-xs text-neonCyan animate-spin" style="animation-duration: 10s;">
+                  82A
+                </div>
+                <p class="mt-3 font-mono text-[11px] text-slate-200 bg-voidBg/80 py-1.5 px-2 rounded">
+                  [PLACEHOLDER: Pólóra vasalt 3D TPU logó gyűrés-teszt GIF helye]
+                </p>
+              </div>
+              <div class="z-10 font-mono text-[11px] text-acidGreen">
+                #IronOnTPU #CyberStreetwear
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-cyber font-bold text-lg text-white">3D Iron-On Cyber Patch</h3>
+                <p class="mt-2 text-sm text-slate-300 leading-relaxed">
+                  Extra lágy 82A TPU-ból nyomtatott, közvetlenül hoodie-ra vagy pólóra vasalható 3D domború grafika. Együtt mozog az anyaggal, nem törik, brutál textúrát ad.
+                </p>
+              </div>
+              <a href="#custom-collab" onclick="selectDropPreset('3D Iron-On TPU Ruházati Grafika')" class="mt-5 block text-center py-2.5 rounded-lg bg-slate-800 hover:bg-neonPink text-white font-mono text-xs font-bold transition">
+                Ilyet akarok a ruhámra →
+              </a>
+            </div>
+          </article>
+
+          <!-- Kártya 2 -->
+          <article class="rounded-2xl bg-cardDark border border-slate-800 hover:border-neonCyan transition overflow-hidden flex flex-col justify-between">
+            <div class="cyber-gif-stage aspect-[9/12] p-4 flex flex-col justify-between border-b border-slate-800">
+              <div class="flex justify-between items-center z-10 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-neonCyan text-voidBg font-bold">COSPLAY PRO</span>
+                <span class="px-2 py-0.5 rounded bg-voidBg/80 text-neonPink">GIF PLACEHOLDER</span>
+              </div>
+              <div class="my-auto text-center z-10 px-2">
+                <div class="w-16 h-16 mx-auto rounded-lg border-2 border-neonPink flex items-center justify-center font-mono text-xs text-neonPink animate-bounce">
+                  NEO
+                </div>
+                <p class="mt-3 font-mono text-[11px] text-slate-200 bg-voidBg/80 py-1.5 px-2 rounded">
+                  [PLACEHOLDER: Neo-Tokyo vállpáncél / maszk 360° forgó videó helye]
+                </p>
+              </div>
+              <div class="z-10 font-mono text-[11px] text-neonCyan">
+                #Cybergoth #CosplayArmor
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-cyber font-bold text-lg text-white">Exoskeleton Váll &amp; Maszk</h3>
+                <p class="mt-2 text-sm text-slate-300 leading-relaxed">
+                  Japán mecha és cybergoth inspirációjú, hajlékony 95A TPU páncélelemek. Nem nyom, nem törik buliban vagy fotózáson sem – mérnöki pontossággal méretre szabva.
+                </p>
+              </div>
+              <a href="#custom-collab" onclick="selectDropPreset('Cosplay / Cybergoth Páncél vagy Maszk')" class="mt-5 block text-center py-2.5 rounded-lg bg-slate-800 hover:bg-neonCyan hover:text-voidBg text-white font-mono text-xs font-bold transition">
+                Egyedi méretet kérek →
+              </a>
+            </div>
+          </article>
+
+          <!-- Kártya 3 -->
+          <article class="rounded-2xl bg-cardDark border border-slate-800 hover:border-acidGreen transition overflow-hidden flex flex-col justify-between">
+            <div class="cyber-gif-stage aspect-[9/12] p-4 flex flex-col justify-between border-b border-slate-800">
+              <div class="flex justify-between items-center z-10 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-acidGreen text-voidBg font-bold">UV / GLOW</span>
+                <span class="px-2 py-0.5 rounded bg-voidBg/80 text-acidGreen">GIF PLACEHOLDER</span>
+              </div>
+              <div class="my-auto text-center z-10 px-2">
+                <div class="w-16 h-16 mx-auto rounded-full bg-acidGreen/20 border-2 border-acidGreen flex items-center justify-center font-mono text-xs text-acidGreen animate-pulse">
+                  GLOW
+                </div>
+                <p class="mt-3 font-mono text-[11px] text-slate-200 bg-voidBg/80 py-1.5 px-2 rounded">
+                  [PLACEHOLDER: Sötétben világító lánc &amp; rave kiegészítő GIF helye]
+                </p>
+              </div>
+              <div class="z-10 font-mono text-[11px] text-acidGreen">
+                #NightRave #Glow3D
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-cyber font-bold text-lg text-white">Bio-Luminescent Tech Gear</h3>
+                <p class="mt-2 text-sm text-slate-300 leading-relaxed">
+                  Foszforeszkáló (sötétben világító) és UV-reaktív kiegészítők: cyber-láncok, fülhallgató- és telefontok rátétek, fesztivál-szett elemek, amik sötétben kelnek életre.
+                </p>
+              </div>
+              <a href="#custom-collab" onclick="selectDropPreset('Glow-in-the-Dark / UV Rave Kiegészítő')" class="mt-5 block text-center py-2.5 rounded-lg bg-slate-800 hover:bg-acidGreen hover:text-voidBg text-white font-mono text-xs font-bold transition">
+                Glow Drop összeállítása →
+              </a>
+            </div>
+          </article>
+
+          <!-- Kártya 4 -->
+          <article class="rounded-2xl bg-cardDark border border-slate-800 hover:border-purple-400 transition overflow-hidden flex flex-col justify-between">
+            <div class="cyber-gif-stage aspect-[9/12] p-4 flex flex-col justify-between border-b border-slate-800">
+              <div class="flex justify-between items-center z-10 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-purple-500 text-white font-bold">1-OF-1 STUDIO</span>
+                <span class="px-2 py-0.5 rounded bg-voidBg/80 text-purple-300">GIF PLACEHOLDER</span>
+              </div>
+              <div class="my-auto text-center z-10 px-2">
+                <div class="w-16 h-16 mx-auto rotate-45 border-2 border-purple-400 flex items-center justify-center font-mono text-xs text-purple-300">
+                  <span class="-rotate-45">1/1</span>
+                </div>
+                <p class="mt-3 font-mono text-[11px] text-slate-200 bg-voidBg/80 py-1.5 px-2 rounded">
+                  [PLACEHOLDER: Egyedi stúdió relikvia / klip-kellék fotó helye]
+                </p>
+              </div>
+              <div class="z-10 font-mono text-[11px] text-purple-300">
+                #CreatorCollab #ZeroWaste
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-cyber font-bold text-lg text-white">Creator &amp; Music Video Props</h3>
+                <p class="mt-2 text-sm text-slate-300 leading-relaxed">
+                  Klipforgatáshoz, DJ-pulthoz vagy saját merch-kollekcióhoz tervezett egyedi darabok – tudatos, hulladékcsökkentő anyagfelhasználással és újrahasznosított színkeverékekkel.
+                </p>
+              </div>
+              <a href="#custom-collab" onclick="selectDropPreset('Creator Collab / Klip Kellék / Limitált Merch')" class="mt-5 block text-center py-2.5 rounded-lg bg-slate-800 hover:bg-purple-500 text-white font-mono text-xs font-bold transition">
+                Collab indítása →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MIÉRT NEM Gagyi 3D NYOMTATÁS? (Mérnöki háttér Gen-Z nyelven) -->
+    <section id="tech-flex" aria-labelledby="tech-title" class="py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800/80">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl bg-cardDark border border-slate-800 p-6">
+          <span class="font-mono text-xs text-neonPink font-bold">01 // ENGINEERED DRIP</span>
+          <h3 id="tech-title" class="mt-2 font-cyber font-bold text-xl text-white">Zenthor 3D LABS hátország</h3>
+          <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+            Nem egy hálószobai hobbi-projekt vagyunk. Mögöttünk a <strong class="text-white">Zenthor 3D LABS</strong> mérnöki és minőségellenőrzési (QA) tapasztalata áll – ezért a csatok tényleg záródnak, a páncél nem törik el, és minden darab úgy néz ki élőben is, mint a renderen.
+          </p>
+        </div>
+
+        <div class="rounded-2xl bg-cardDark border border-slate-800 p-6">
+          <span class="font-mono text-xs text-neonCyan font-bold">02 // WEARABLE FLEX 82A</span>
+          <h3 class="mt-2 font-cyber font-bold text-xl text-white">Ruhával együtt élő textúrák</h3>
+          <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+            A speciális 82A elasztomer rétegeinket hőpréssel/vasalással rögzítjük textilre. Összegyűröd, bedobod a táskába, viseled egész éjjel – a 3D grafika rugalmas marad és nem válik le.
+          </p>
+        </div>
+
+        <div class="rounded-2xl bg-cardDark border border-slate-800 p-6">
+          <span class="font-mono text-xs text-acidGreen font-bold">03 // ECO-CYBER MINDSET</span>
+          <h3 class="mt-2 font-cyber font-bold text-xl text-white">Nulla tömeggyártás, 100% egyediség</h3>
+          <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+            Csak azt gyártjuk le, amire tényleg igény van, minimális hulladékkal, és a színes gyártási maradékokat limitált, megismételhetetlen „glitch-mix” darabokba forgatjuk vissza.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOM DROP IGÉNYLŐ FORM -->
+    <section id="custom-collab" aria-labelledby="collab-title" class="py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto rounded-3xl bg-cardDark border border-neonPink/50 p-6 sm:p-10 shadow-2xl">
+        <span class="font-mono text-xs text-acidGreen uppercase tracking-widest">INITIATE CUSTOM DROP // 1-OF-1</span>
+        <h2 id="collab-title" class="mt-2 font-cyber font-extrabold text-2xl sm:text-4xl text-white">
+          Dobd be az ötleted, mi legyártjuk a cuccot.
+        </h2>
+        <p class="mt-3 text-sm text-slate-300">
+          Van egy saját logód vasalható TPU-hoz, cosplay terved vagy egy teljesen elborult kiegészítő ötleted? Írd meg, és összerakjuk a tervet.
+        </p>
+
+        <form onsubmit="generateCyberBrief(event)" class="mt-6 space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="cyber-type" class="block font-mono text-xs text-slate-300 mb-1.5">MIT KÉSZÍTSÜNK?</label>
+              <select id="cyber-type" class="w-full rounded-xl bg-voidBg border border-slate-700 px-4 py-3 text-sm text-white focus:border-neonPink focus:outline-none">
+                <option value="3D Iron-On TPU Ruházati Grafika">3D Iron-On TPU Ruházati Grafika</option>
+                <option value="Cosplay / Cybergoth Páncél vagy Maszk">Cosplay / Cybergoth Páncél vagy Maszk</option>
+                <option value="Glow-in-the-Dark / UV Rave Kiegészítő">Glow-in-the-Dark / UV Rave Kiegészítő</option>
+                <option value="Creator Collab / Klip Kellék / Limitált Merch">Creator Collab / Klip Kellék / Limitált Merch</option>
+              </select>
+            </div>
+            <div>
+              <label for="cyber-handle" class="block font-mono text-xs text-slate-300 mb-1.5">IG / TIKTOK HANDLE VAGY E-MAIL</label>
+              <input id="cyber-handle" type="text" required placeholder="@te_neved vagy email@domain.hu" class="w-full rounded-xl bg-voidBg border border-slate-700 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-neonCyan focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label for="cyber-idea" class="block font-mono text-xs text-slate-300 mb-1.5">VIBE, SZÍNEK, MÉRET VAGY REFERENCIA LINK</label>
+            <textarea id="cyber-idea" rows="3" required placeholder="Pl. Fekete oversize hoodie-ra szeretnék neon-zöld 82A TPU cyber-gerinc mintát, vagy 1 db világító maszkot fotózáshoz..." class="w-full rounded-xl bg-voidBg border border-slate-700 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-neonPink focus:outline-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-neonPink to-purple-600 text-white font-mono font-bold text-xs uppercase tracking-wider hover:brightness-110 transition">
+            Drop Brief Generálása ⚡
+          </button>
+        </form>
+
+        <div id="cyber-output" class="hidden mt-6 rounded-2xl bg-voidBg border border-acidGreen/60 p-5">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <span class="font-mono text-xs text-acidGreen font-bold">✓ CYDOR-CREATIVE BRIEF READY</span>
+            <button type="button" onclick="copyCyberBrief()" id="cyber-copy-btn" class="px-3 py-1 rounded-full bg-acidGreen text-voidBg font-mono text-xs font-bold">
+              Másolás
+            </button>
+          </div>
+          <pre id="cyber-output-text" class="font-mono text-xs text-slate-200 whitespace-pre-wrap leading-relaxed"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 py-8 px-4 sm:px-6 lg:px-8 font-mono text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <span>ZENTHOR 3D LABS // CYDOR-CREATIVE — Wearable TPU &amp; Cybergoth Lab</span>
+      <a href="zenthor-engineering.html" class="text-slate-300 hover:text-neonCyan transition">
+        ← Vissza a Zenthor 3D LABS Mérnöki &amp; B2B oldalra
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function selectDropPreset(value) {
+      const sel = document.getElementById('cyber-type');
+      if (sel) sel.value = value;
+    }
+
+    function generateCyberBrief(e) {
+      e.preventDefault();
+      const type = document.getElementById('cyber-type').value;
+      const handle = document.getElementById('cyber-handle').value.trim();
+      const idea = document.getElementById('cyber-idea').value.trim();
+
+      const text = [
+        'ZENTHOR 3D LABS // CYDOR-CREATIVE — CUSTOM DROP REQUEST',
+        `Kategória: ${type}`,
+        `Kontakt / Handle: ${handle}`,
+        `Koncepció & Vibe: ${idea}`
+      ].join('\n');
+
+      document.getElementById('cyber-output-text').textContent = text;
+      document.getElementById('cyber-output').classList.remove('hidden');
+    }
+
+    function copyCyberBrief() {
+      const text = document.getElementById('cyber-output-text').textContent;
+      const btn = document.getElementById('cyber-copy-btn');
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      btn.textContent = '✓ Kimásolva';
+      setTimeout(() => btn.textContent = 'Másolás', 2000);
+    }
+  </script>
+</body>
+</html>
